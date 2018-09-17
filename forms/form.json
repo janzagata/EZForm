@@ -1,0 +1,27 @@
+{
+  "id": "form1",
+  "action": "/ezform.php",
+  "redirectTo": "/templates/exit.html",
+  "processors": {
+    "SendMailProcessor": {
+      "address": "janzagata@gmail.com",
+      "subject": "TEST SUBJECT",
+      "message": "{{ id1 }} - YAAAY",
+      "debug": true
+    }
+  },
+  "fields": [
+    {
+      "id": "id1",
+      "class": "form",
+      "type": "text",
+      "value": "HODNOTA"
+    },
+    {
+      "id": "id2",
+      "class": "form",
+      "type": "textarea",
+      "value": "HODNOTA"
+    }
+  ]
+}
